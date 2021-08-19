@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Página tributo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="list-principales">
+                    <a href="index.html">JavaScript Array prototype</a>
+                </li>
+                <li class="list-principales">
+                    <a href="index.html">Métodos</a>
+                </li>
+                <li class="list-principales">
+                    <a href="index.html">Propiedades</a>
+                </li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="imagenes/arrays.jpg" class="imagen-banner" alt="">
+        </section>
+        <section>
+            <article>
+                <h1 class="titulo-principal">Array prototype</h1>
+                <p class="descipt">
+                    El prototype un constructor global disponible para todos los objetos de JavaScript.
+                    prototype hace referencia al objeto global Array ().
+                    El <b>prototype-constructor</b> le permite agregar nuevas propiedades y métodos a las matrices.
+                    Al construir una nueva propiedad, TODAS las matrices obtendrán esta propiedad y su valor.
+                    Al construir un nuevo método, TODAS las matrices obtendrán este método.
+                </p>    
+            </article>
+            <article>
+                <h2 class="titulo-secundario">Métodos</h2>
+                <p class="descipt">
+                    Un método es un bloque de código que contiene una serie de instrucciones. Un programa hace que se ejecuten las instrucciones al llamar al método y especificando los argumentos de método necesarios.
+                </p>
+            </article>
+            <!-- Metodos -->
+            <article class="metodos">
+                <h3 class="titulo-terciario">toString</h3>
+                <p class="descipt">
+                    El método JavaScript toString() convierte una matriz en una cadena de valores de matriz (separados por comas)                    
+                    <p class="ejm">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                            document.getElementById("demo").innerHTML = fruits.toString();
+                    </p>
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">join</h3>
+                <p class="descipt">
+                    El método join() también une todos los elementos de la matriz en una cadena.
+                    Se comporta igual toString(), pero además puedes especificar el separador:
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                            document.getElementById("demo").innerHTML = fruits.join(" * ");
+                    </p>
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">pop</h3>
+                <p class="descipt">
+                    El método pop() elimina el último elemento de una matriz:
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.pop();  // Removes "Mango" from fruits                       
+                    </p>
+                </p>
+                <p class="descipt">
+                    El método pop() devuelve el valor que "apareció":                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        let x = fruits.pop();  // x = "Mango"                        
+                    </p>
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">push</h3>
+                <p class="descipt">
+                    El método push() agrega un nuevo elemento a una matriz (al final):                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.push("Kiwi");   // Adds "Kiwi" to fruits     
+                    </p>                   
+                </p>
+                <p class="descipt">
+                    El método push() devuelve la nueva longitud de la matriz:
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        let x = fruits.push("Kiwi");   //  x = 5 
+                    </p>                       
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">shift</h3>
+                <p class="descipt">
+                    El método shift() elimina el primer elemento de la matriz y "desplaza" todos los demás elementos a un índice más bajo.                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.shift();   // Removes "Banana" from fruits          
+                    </p>
+                </p>
+                <p class="descipt">
+                    El método shift() devuelve el valor que se "desplazó":                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        let x = fruits.shift();    // x = "Banana"        
+                    </p>
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">unShift</h3>
+                <p class="descipt">
+                    El método unshift() agrega un nuevo elemento a una matriz (al principio) y "deshace" los elementos más antiguos:                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.unshift("Lemon");    // Adds "Lemon" to fruits       
+                    </p>                 
+                </p>
+                <p class="descipt">
+                    El método unshift() devuelve la nueva longitud de la matriz.                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.unshift("Lemon");    // Returns 5       
+                    </p>
+                </p>
+            </article>
+
+            <article class="metodos">
+                <h3 class="titulo-terciario">splice</h3>
+                <p class="descipt">
+                    El método splice() se puede utilizar para agregar nuevos elementos a una matriz:                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.splice(2, 0, "Lemon", "Kiwi");      
+                    </p>                  
+                </p>
+                <p class="descipt">
+                    El primer parámetro (2) define la posición en la que se deben agregar (empalmar) nuevos elementos .
+                    El segundo parámetro (0) define cuántos elementos deben eliminarse .
+                    El resto de parámetros ("Limón", "Kiwi") definen los nuevos elementos a añadir .
+                    El splice()método devuelve una matriz con los elementos eliminados:                    
+                    <p class="ejm">
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        fruits.splice(2, 2, "Lemon", "Kiwi");  
+                    </p>
+                </p>
+            </article>
+
+
+        </section>
+    </main>
+    
+</body>
+</html>

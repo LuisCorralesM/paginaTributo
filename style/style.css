@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #000;
+}
+
+
+header{
+    position: fixed;
+    width: 100vw;
+}
+
+/* DESKTOP */
+
+/* header*/
+.nav-list{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 1, 46);
+    height: 40px;
+    font-size: 24px;
+}
+
+.list-principales{
+    border: 1px solid white ;
+    width: 250px;
+    margin: 2px 50px;
+    padding: 4px;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+}
+
+.list-principales:hover{
+    background-color: rgb(53, 52, 94);
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* main */
+
+/* section 1*/
+
+.imagen-banner{
+    width: 100vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+/* section 2 */
+
+section{
+    margin: 50px 150px;
+    border: 1px solid #000;
+}
+.titulo-principal{
+    padding: 20px 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+.titulo-secundario{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulo-terciario{
+    padding: 20px 100px;
+    font-size: 28px; 
+}
+
+.descipt{
+    text-align: justify;
+    padding: 0 100px;
+}
+
+.ejm{
+    text-align: center;
+    font-weight: 700;
+    color: rgb(29, 48, 59);
+    padding: 0 100px;
+    margin: 10px 0;
+}
+
+.metodos{
+    border: 2px double black;
+    margin: 20px 100px;
+}
+
+.metodos:hover{
+    background-color: rgb(210, 210, 218);
+    cursor: help;
+}
+
